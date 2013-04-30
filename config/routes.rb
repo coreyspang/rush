@@ -1,4 +1,13 @@
 Rush::Application.routes.draw do
+get 'about' => 'pages#about'
+get 'reserve-a-class' => 'pages#reserve-a-class'
+get 'instructors' => 'pages#instructors'
+get 'pricing' => 'pages#pricing'
+get 'blog' => 'pages#blog'
+get 'contact-us' => 'pages#contact-us'
+
+root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
